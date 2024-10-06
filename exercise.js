@@ -28,4 +28,15 @@ const moveCharForward = function (string) {
   return result;
 };
 
-console.log(moveCharForward("ABCD"));
+// console.log(moveCharForward("ABCD"));
+
+const date = new Date();
+
+// console.log(`${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`);
+
+const startWith = function (str) {
+  return str.startsWith("New!") ? str : `New! ${str}`;
+};
+
+console.log(startWith("test"));
+console.log(startWith("New!"));
